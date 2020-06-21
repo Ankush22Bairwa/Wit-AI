@@ -280,17 +280,10 @@ def social(request):
     return render(request, "users/social.html", {})
 
 
-<<<<<<< HEAD
-
-def sports(request):
-    pass
-
-=======
 def sports(request):
     pass
 
 
->>>>>>> a49ad8276078df0fe5394481520aa3d457ec7449
 def stock(request):
     answer_dict = {'get_apple_stock_price': 'https://finance.yahoo.com/quote/AAPL?p=AAPL&.tsrc=fin-srch',
                    'get_facebook_stock_price': 'https://finance.yahoo.com/quote/FB?p=FB&.tsrc=fin-srch',
@@ -354,16 +347,10 @@ def ReturnStockPrice(converted_text_intent, stored_result_dict):
         response = requests.get(url)
         #print("\nWit Response is: {}".format(response[0]))
 
-<<<<<<< HEAD
-        soup = bs4.BeautifulSoup(response.text,"lxml")
-
-        text = soup.find_all('div',{'class': "My(6px) Pos(r) smartphone_Mt(6px)"})[0].find('span').text
-=======
         soup = bs4.BeautifulSoup(response.text, "lxml")
 
         text = soup.find_all('div', {'class': "My(6px) Pos(r) smartphone_Mt(6px)"})[
             0].find('span').text
->>>>>>> a49ad8276078df0fe5394481520aa3d457ec7449
         # print("\nWit Response is: {}".format(response[0]))
 
         soup = bs4.BeautifulSoup(response.text, "lxml")
